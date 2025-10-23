@@ -9,12 +9,12 @@ import java.lang.Object;
 
 public class test1 {
     public static void main(String[] args) {
-
+        String apiKey = System.getenv("TP2_ZougaghMounsif");
         // 1. Création de l'instance du modèle avec le Builder
         ChatModel model = GoogleAiGeminiChatModel.builder()
                 .modelName("gemini-2.5-flash")
                 .temperature(0.7)
-                .apiKey("AIzaSyByaLQcZU_VxoPDdBpW-ZdWp0A3Y3v4zfM")
+                .apiKey(apiKey)
                 .build();
 
         // 2. Définition d'une question simple
