@@ -15,8 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import static sun.tools.jconsole.JConsole.isDebug;
-
 /**
  * Backing bean pour la page JSF index.xhtml.
  * Portée view pour conserver l'état de la conversation qui dure pendant plusieurs requêtes HTTP.
