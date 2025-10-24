@@ -10,7 +10,7 @@ import java.lang.Object;
 public class test1 {
     public static void main(String[] args) {
         String apiKey = System.getenv("TP2_ZougaghMounsif");
-        // 1. Création de l'instance du modèle avec le Builder
+        // 1. Création de l'instance du modèle (comme au Test 1)
         ChatModel model = GoogleAiGeminiChatModel.builder()
                 .modelName("gemini-2.5-flash")
                 .temperature(0.7)
