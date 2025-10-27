@@ -39,8 +39,8 @@ public class Test5 {
 
         // Chargement du document, sous la forme d'embeddings, dans une base vectorielle en mémoire
         String nomDocument = "agentsmcp.pdf";
-        //DocumentParser documentParser= new ApachePdfBoxDocumentParser();
-        Document document = FileSystemDocumentLoader.loadDocument(nomDocument);
+        DocumentParser documentParser= new ApachePdfBoxDocumentParser();
+        Document document = FileSystemDocumentLoader.loadDocument(nomDocument,documentParser);
         EmbeddingStore<TextSegment> embeddingStore = new InMemoryEmbeddingStore<>();
         // Calcule les embeddings et les enregistre dans la base vectorielle
         EmbeddingStoreIngestor.ingest(document, embeddingStore);

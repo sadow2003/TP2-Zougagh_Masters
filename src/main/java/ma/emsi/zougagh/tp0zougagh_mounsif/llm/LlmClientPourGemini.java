@@ -30,7 +30,7 @@ public class LlmClientPourGemini implements Serializable {
     public LlmClientPourGemini() {
         // Récupère la clé secrète pour travailler avec l'API du LLM, mise dans une variable d'environnement
         // du système d'exploitation.
-        this.apiKey = System.getenv("AIzaSyByaLQcZU_VxoPDdBpW-ZdWp0A3Y3v4zfM");
+        this.apiKey = System.getenv("TP2_ZougaghMounsif");
 
         // Client REST pour envoyer des requêtes vers les endpoints de l'API du LLM
         this.clientRest = ClientBuilder.newClient();
